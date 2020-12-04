@@ -49,5 +49,5 @@ func hashFileCrc32(filePath string, polynomial uint32) (string, error) {
 		return result, err
 	}
 
-	return fmt.Sprintf("%08X", hash.Sum32()), nil
+	return fmt.Sprintf("%08X\n", hash.Sum32()), nil
 }
